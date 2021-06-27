@@ -57,3 +57,10 @@ openairinterface5g
 └── targets: Top-level wrappers for unitary simulation for PHY channels, system-level emulation (eNB-UE with and without S1), and realtime eNB and UE and RRH GW.
 </pre>
 
+# changes in lte-ue and eNB
+lte-ue:  
+mainly set cpu affinity for multi-ue running in docker  
+
+eNB:
+1. IMSI mapping to Twins ID
+2. choose lte-ue according to best ul_cqi rule
